@@ -46,7 +46,7 @@ export default () => <>
 								Open detail
 							</Link>
 						</GenericCell>
-						<HasOneSelectCell field="event" header="event" options="Event.id" />
+						<HasOneSelectCell field="event" header="event" options="Event.Name" />
 						<HasOneSelectCell field="clubMember" header="clubMember" options="ClubMember.name" />
 						<BooleanCell key="transportNeeded" field="transportNeeded" header="transportNeeded" />
 						<GenericCell shrunk canBeHidden={false}>

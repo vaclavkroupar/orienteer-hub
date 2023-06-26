@@ -8,7 +8,7 @@ export default () => <>
 	<Title>
 		Create event registration
 	</Title>
-	<CreateScope entity="EventRegistration" redirectOnSuccess="admin/eventRegistration/detail(id: $entity.id)">
+	<CreateScope entity="EventRegistration" redirectOnSuccess="admin/event/detail(id: $entity.event.id)">
 		<Slots.Actions>
 			<LinkButton to="admin/clubMember/create">
 				New Member
