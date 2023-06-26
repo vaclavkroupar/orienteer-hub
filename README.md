@@ -33,3 +33,10 @@
       - `<span class="cui-layout-chrome-bar-body-scrolled-indicator"></span>` takes space, messing css
       - `<li class="cui-menu-section is-expanded" tabindex="-2" aria-disabled="true"> ... </li>` has a messy bottom border at ::after
       - should use `left: var(--cui-edge-offset-left);` and  `right: var(--cui-edge-offset-right);` that is title bar using
+  - Registration Facilitation:
+    - nice took 2 minutes but now I see the Id problem in the form addressed earlier :D
+    - fixing the names vs ids 2 more minutes;
+    - nicely done... But it needs to be changed through 3 pages...
+    - btw what led you to use the url path for the users of structure? every new role increases size of the app. Better routing could handle it without code duplication.
+    - BTW the task is unclear: "registration of new members" could mean creating new members directly for the event - the new one would be automatically assigned to the event.
+    - it would use `MultiEditScopeProps` I guess but the docs are silent about this. + more data binding fun.

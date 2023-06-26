@@ -39,11 +39,11 @@ export default () => {
 		<Directive name="content-max-width" content={null} />
 		<Slots.ContentStack>
 			<DataGridScope entities="Event" itemsPerPage={50} onEntityClick={handleOnEntityClick}>
-				{/* <GenericCell shrunk canBeHidden={false}>
+				<GenericCell shrunk canBeHidden={false}>
 					<Link to="admin/event/detail(id: $entity.id)">
 						Open detail
 					</Link>
-				</GenericCell> */}
+				</GenericCell>
 				<EnumCell
 					options={{ race: 'race', training: 'training', trainingCamp: 'trainingCamp' }}
 					key="type"

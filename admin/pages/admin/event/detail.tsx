@@ -18,6 +18,9 @@ export default () => <>
 			<LinkButton to="admin/event/edit(id: $entity.id)">
 				Edit event
 			</LinkButton>
+			<LinkButton to="admin/eventRegistration/create">
+				Register
+			</LinkButton>
 		</Slots.Actions>
 		<Slots.ContentStack>
 			<Stack direction="vertical" gap="xlarge">
@@ -38,7 +41,7 @@ export default () => <>
 								Open detail
 							</Link>
 						</GenericCell>
-						<HasOneSelectCell field="event" header="event" options="Event.id" />
+						<HasOneSelectCell field="event" header="event" options="Event.Name" />
 						<HasOneSelectCell field="clubMember" header="clubMember" options="ClubMember.name" />
 						<BooleanCell key="transportNeeded" field="transportNeeded" header="transportNeeded" />
 						<GenericCell shrunk canBeHidden={false}>
