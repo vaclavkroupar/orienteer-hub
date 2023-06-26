@@ -21,3 +21,6 @@
       - now I need to know how to use the entity context
       - @contember/binding seems to be closed source; OK; I'm not going to debug it based on  https://registry.npmjs.org/@contember/binding
       - desired outcome could be seen at `admin/pages/admin/event/list.tsx`
+    - OK I think I found an ugly solution 
+      - more problems appeared; previous take is in git history
+      - less desired outcome could be seen at `admin/pages/admin/event/list.tsx`
