@@ -24,3 +24,12 @@
     - OK I think I found an ugly solution 
       - more problems appeared; previous take is in git history
       - less desired outcome could be seen at `admin/pages/admin/event/list.tsx`
+  - "replace ID with names for better human readability"
+    - only ID in use I see is the one in url - can be replaced but only unique field in data model is `unique_ClubMember_email_98a11f`
+  - other UI improvements:
+    - edited `admin/pages/admin/clubMember/detail.tsx` - the slot.back looks bad and breaks the schema
+    - well I can create my own slot so as `admin/components/Slots.tsx` says, but @contember/layout is closed source :)
+    - would change the horizontal line in the menu
+      - `<span class="cui-layout-chrome-bar-body-scrolled-indicator"></span>` takes space, messing css
+      - `<li class="cui-menu-section is-expanded" tabindex="-2" aria-disabled="true"> ... </li>` has a messy bottom border at ::after
+      - should use `left: var(--cui-edge-offset-left);` and  `right: var(--cui-edge-offset-right);` that is title bar using

@@ -4,16 +4,24 @@ import { Directive, Title } from '../../../components/Directives'
 import { Slots } from '../../../components/Slots'
 
 export default () => <>
+	{/* this is just a demo how I'd prefer it but teh types are not ready for it. js handles never the less.  */}
 	<Title>
-		Club member detail
-	</Title>
-	<Directive name="content-max-width" content={null} />
-	<DetailScope entity="ClubMember(id=$id)">
-		<Slots.Back>
+		<div className='flex items-center gap-x-2'>
 			<NavigateBackLink to="admin/clubMember/list">
 				Back
 			</NavigateBackLink>
-		</Slots.Back>
+			<div>
+				Club member detail
+			</div>
+		</div>
+	</Title>
+	<Directive name="content-max-width" content={null} />
+	<DetailScope entity="ClubMember(id=$id)">
+		{/* <Slots.Back>
+			<NavigateBackLink to="admin/clubMember/list">
+				Back
+			</NavigateBackLink>
+		</Slots.Back> */}
 		<Slots.Actions>
 			<LinkButton to="admin/clubMember/edit(id: $entity.id)">
 				Edit club member
