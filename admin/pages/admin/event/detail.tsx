@@ -44,6 +44,7 @@ export default () => <>
 						<HasOneSelectCell field="event" header="event" options="Event.Name" />
 						<HasOneSelectCell field="clubMember" header="clubMember" options="ClubMember.name" />
 						<BooleanCell key="transportNeeded" field="transportNeeded" header="transportNeeded" />
+						<BooleanCell key="takingCar" field="takingCar" header="Ill take a car" />
 						<GenericCell shrunk canBeHidden={false}>
 							<DeleteEntityButton immediatePersist />
 						</GenericCell>

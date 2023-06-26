@@ -70,5 +70,6 @@ export class ClubMember {
 export class EventRegistration {
 	event = def.manyHasOne(Event, 'registrations').notNull()
 	clubMember = def.manyHasOne(ClubMember, 'registrations').notNull()
-	transportNeeded = def.boolColumn().notNull()
+	transportNeeded = def.boolColumn()
+	takingCar = def.boolColumn()
 }

@@ -43,3 +43,6 @@
  - [Bonus Task 1]:
   - once I understood the binding and data model a bit more it was pretty easy
   - good job creating creating it. Entity suggestions would be nice :D
+ - [Bonus Task 1]:
+  - what is your way of debugging when dev messes up the migration?
+  - anyway migrations are a great thing ;)
