@@ -6,6 +6,7 @@ import { Slots } from '../../../components/Slots'
 export default () => <>
 	{/* this is just a demo how I'd prefer it but teh types are not ready for it. js handles never the less.  */}
 	<Title>
+		{/* @ts-ignore */}
 		<div className='flex items-center gap-x-2'>
 			<NavigateBackLink to="admin/clubMember/list">
 				Back
